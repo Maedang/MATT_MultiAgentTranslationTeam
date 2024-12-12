@@ -9,40 +9,40 @@ import json
 import json
 
 with (
-    open("../translations_2/Multiagents/Multiagents_flores_vie.json", "r") as multiagents_flores_vn,
-    open("../translations_2/Multiagents/Multiagents_chunks_vie.json", "r") as multiagents_chunks_vn,
-    open("../translations_2/Baseline/Baseline_flores_vie.json", "r") as baseline_flores_vn,
-    open("../translations_2/Baseline/Baseline_chunks_vie.json", "r") as baseline_chunks_vn,
-    open("../translations_2/Google/Google_flores_vie.json", "r") as google_flores_vn,
-    open("../translations_2/Google/Google_chunks_vie.json", "r") as google_chunks_vn,
+    open("../translations/Multiagents/Multiagents_flores_vie.json", "r") as multiagents_flores_vn,
+    open("../translations/Multiagents/Multiagents_chunks_vie.json", "r") as multiagents_chunks_vn,
+    open("../translations/Baseline/Baseline_flores_vie.json", "r") as baseline_flores_vn,
+    open("../translations/Baseline/Baseline_chunks_vie.json", "r") as baseline_chunks_vn,
+    open("../translations/Google/Google_flores_vie.json", "r") as google_flores_vn,
+    open("../translations/Google/Google_chunks_vie.json", "r") as google_chunks_vn,
     
-    open("../translations_2/Multiagents/Multiagents_flores_hin.json", "r") as multiagents_flores_hin,
-    open("../translations_2/Multiagents/Multiagents_chunks_hin.json", "r") as multiagents_chunks_hin,
-    open("../translations_2/Baseline/Baseline_flores_hin.json", "r") as baseline_flores_hin,
-    open("../translations_2/Baseline/Baseline_chunks_hin.json", "r") as baseline_chunks_hin,
-    open("../translations_2/Google/Google_flores_hin.json", "r") as google_flores_hin,
-    open("../translations_2/Google/Google_chunks_hin.json", "r") as google_chunks_hin,
+    open("../translations/Multiagents/Multiagents_flores_hin.json", "r") as multiagents_flores_hin,
+    open("../translations/Multiagents/Multiagents_chunks_hin.json", "r") as multiagents_chunks_hin,
+    open("../translations/Baseline/Baseline_flores_hin.json", "r") as baseline_flores_hin,
+    open("../translations/Baseline/Baseline_chunks_hin.json", "r") as baseline_chunks_hin,
+    open("../translations/Google/Google_flores_hin.json", "r") as google_flores_hin,
+    open("../translations/Google/Google_chunks_hin.json", "r") as google_chunks_hin,
 
-    open("../translations_2/Multiagents/Multiagents_flores_mal.json", "r") as multiagents_flores_mal,
-    open("../translations_2/Multiagents/Multiagents_chunks_mal.json", "r") as multiagents_chunks_mal,
-    open("../translations_2/Baseline/Baseline_flores_mal.json", "r") as baseline_flores_mal,
-    open("../translations_2/Baseline/Baseline_chunks_mal.json", "r") as baseline_chunks_mal,
-    open("../translations_2/Google/Google_flores_mal.json", "r") as google_flores_mal,
-    open("../translations_2/Google/Google_chunks_mal.json", "r") as google_chunks_mal, 
+    open("../translations/Multiagents/Multiagents_flores_mal.json", "r") as multiagents_flores_mal,
+    open("../translations/Multiagents/Multiagents_chunks_mal.json", "r") as multiagents_chunks_mal,
+    open("../translations/Baseline/Baseline_flores_mal.json", "r") as baseline_flores_mal,
+    open("../translations/Baseline/Baseline_chunks_mal.json", "r") as baseline_chunks_mal,
+    open("../translations/Google/Google_flores_mal.json", "r") as google_flores_mal,
+    open("../translations/Google/Google_chunks_mal.json", "r") as google_chunks_mal, 
 
-    # open("../translations_2/Multiagents/Multiagents_flores_spa.json", "r") as multiagents_flores_spa,
-    # open("../translations_2/Multiagents/Multiagents_chunks_spa.json", "r") as multiagents_chunks_spa,
-    # open("../translations_2/Baseline/Baseline_flores_spa.json", "r") as baseline_flores_spa,
-    # open("../translations_2/Baseline/Baseline_chunks_spa.json", "r") as baseline_chunks_spa,
-    # open("../translations_2/Google/Google_flores_spa.json", "r") as google_flores_spa,
-    # open("../translations_2/Google/Google_chunks_spa.json", "r") as google_chunks_spa,
+    # open("../translations/Multiagents/Multiagents_flores_spa.json", "r") as multiagents_flores_spa,
+    # open("../translations/Multiagents/Multiagents_chunks_spa.json", "r") as multiagents_chunks_spa,
+    # open("../translations/Baseline/Baseline_flores_spa.json", "r") as baseline_flores_spa,
+    # open("../translations/Baseline/Baseline_chunks_spa.json", "r") as baseline_chunks_spa,
+    # open("../translations/Google/Google_flores_spa.json", "r") as google_flores_spa,
+    # open("../translations/Google/Google_chunks_spa.json", "r") as google_chunks_spa,
 
-    # open("../translations_2/Multiagents/Multiagents_flores_zho_simpl.json", "r") as multiagents_flores_zho_simpl,
-    # open("../translations_2/Multiagents/Multiagents_chunks_zho_simpl.json", "r") as multiagents_chunks_zho_simpl,
-    # open("../translations_2/Baseline/Baseline_flores_zho_simpl.json", "r") as baseline_flores_zho_simpl,
-    # open("../translations_2/Baseline/Baseline_chunks_zho_simpl.json", "r") as baseline_chunks_zho_simpl,
-    # open("../translations_2/Google/Google_flores_zho_simpl.json", "r") as google_flores_zho_simpl,
-    # open("../translations_2/Google/Google_chunks_zho_simpl.json", "r") as google_chunks_zho_simpl,
+    # open("../translations/Multiagents/Multiagents_flores_zho_simpl.json", "r") as multiagents_flores_zho_simpl,
+    # open("../translations/Multiagents/Multiagents_chunks_zho_simpl.json", "r") as multiagents_chunks_zho_simpl,
+    # open("../translations/Baseline/Baseline_flores_zho_simpl.json", "r") as baseline_flores_zho_simpl,
+    # open("../translations/Baseline/Baseline_chunks_zho_simpl.json", "r") as baseline_chunks_zho_simpl,
+    # open("../translations/Google/Google_flores_zho_simpl.json", "r") as google_flores_zho_simpl,
+    # open("../translations/Google/Google_chunks_zho_simpl.json", "r") as google_chunks_zho_simpl,
 
     
 ):
@@ -280,7 +280,7 @@ def write_answer(component, model, source_text, translation_a, translation_b):
     print(log_entry)
 
     # Write the log entry to a file - Vietnamese characters
-    log_file_path = "Mai_2_translation_arena_log.jsonl"  # Adjust the path as needed
+    log_file_path = "translation_arena_log.jsonl"  # Adjust the path as needed
     with open(log_file_path, "a",  encoding='utf-8') as log_file:
         log_file.write(json.dumps(log_entry, ensure_ascii=False, indent=2) + "\n")
 
