@@ -1,14 +1,14 @@
 [tool.poetry]
-name = "translation-agent"
+name = "MATT"
 version = "0.1.0"
-description = "Agentic workflow for machine translation using LLMs"
-authors = ["Andrew Ng <ng@deeplearning.ai>"]
+description = "Multi-agent workflow for machine transalation using LLMs and Google Translation API "
+authors = ["Mai Dang  <mai.nthidang@gmail.com>", Anishka Peter  <anishkapeter@gmail.com> ]
 license = "MIT"
 readme = "README.md"
 package-mode = true
-packages = [{ include = "translation_agent", from = "src" }]
-repository = "https://github.com/andrewyng/translation-agent"
-keywords = ["translation", "agents", "LLM", "machine translation"]
+packages = [{ include = "MATT", from = "src" }]
+repository = "https://github.com/Maedang/MATT_MultiAgentTranslationTeam"
+keywords = ["translation", "agents", "multi-agents", LLM", "machine translation", "Google Translation", "API"]
 
 
 [tool.poetry.dependencies]
